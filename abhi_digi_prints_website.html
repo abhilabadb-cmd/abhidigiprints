@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABHI DIGI PRINTS</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:'Poppins',sans-serif;background:#f5f5f5;color:#111}
+
+/* CUSTOM BANNER */
+header{
+  background:linear-gradient(135deg,#0F0F0F,#2a2a2a);
+  height:350px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#fff;
+}
+header h1{
+  font-size:40px;
+  margin-bottom:10px;
+}
+header h2{
+  font-size:22px;
+  font-weight:400;
+  color:#F5B400;
+}
+header p{
+  font-size:16px;
+  margin-top:10px;
+}
+
+.btn{background:#F5B400;color:#000;padding:12px 24px;border-radius:25px;text-decoration:none;font-weight:600;display:inline-block;margin-top:15px}
+
+section{padding:50px 20px;text-align:center}
+
+.services{display:flex;flex-wrap:wrap;gap:20px;justify-content:center}
+.card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.1);width:200px}
+
+.gallery{
+  width:300px;
+  height:300px;
+  margin:auto;
+  position:relative;
+  overflow:hidden;
+}
+.gallery img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:10px;
+  display:none;
+}
+.gallery img.active{display:block}
+
+.price-box{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
+.price{background:#fff;padding:20px;border-radius:12px;width:180px;box-shadow:0 4px 12px rgba(0,0,0,0.1)}
+
+footer{background:#0F0F0F;color:#fff;padding:25px;text-align:center}
+
+.whatsapp{
+ position:fixed;
+ bottom:20px;
+ right:20px;
+ background:#25D366;
+ color:#fff;
+ padding:15px;
+ border-radius:50%;
+ font-size:22px;
+ text-decoration:none;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>ABHI DIGI PRINTS</h1>
+<h2>Konica Minolta C4065</h2>
+<p>High Quality Machine Printing & Album Works</p>
+<a class="btn" href="https://wa.me/919849518019?text=Hi%20I%20want%20printing%20details">Send on WhatsApp</a>
+</header>
+
+<section>
+<h2>Our Services</h2>
+<div class="services">
+<div class="card">Photo Printing</div>
+<div class="card">Custom Albums</div>
+<div class="card">Flex & Banners</div>
+<div class="card">Photo Frames</div>
+<div class="card">ID Cards</div>
+<div class="card">Document Printing</div>
+</div>
+</section>
+
+<section>
+<h2>Gallery</h2>
+<div class="gallery">
+<img src="1.jpg" class="active">
+<img src="2.jpg">
+<img src="3.jpg">
+<img src="4.jpg">
+<img src="5.jpg">
+</div>
+</section>
+
+<section>
+<h2>Why Choose Us</h2>
+<p>✔ High-quality digital printing</p>
+<p>✔ Accurate colors & durable prints</p>
+<p>✔ Trusted by photographers & customers</p>
+<p>✔ Fast delivery & professional service</p>
+</section>
+
+<section>
+<h2>Pricing</h2>
+<div class="price-box">
+<div class="price">Basic<br>Affordable prints</div>
+<div class="price">Standard<br>Best value quality</div>
+<div class="price">Premium<br>High-end finish</div>
+</div>
+</section>
+
+<section>
+<h2>Contact</h2>
+<p>Cinema Road, Mahalaxmiwada, Adilabad</p>
+<p>Phone: 9849518019</p>
+</section>
+
+<footer>
+<p>ABHI DIGI PRINTS - Your Trusted Printing Partner</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919849518019">💬</a>
+
+<script>
+let slides=document.querySelectorAll('.gallery img');
+let i=0;
+setInterval(()=>{
+slides[i].classList.remove('active');
+i=(i+1)%slides.length;
+slides[i].classList.add('active');
+},3000);
+</script>
+
+</body>
+</html>
